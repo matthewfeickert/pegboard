@@ -14,6 +14,8 @@ coverage](https://codecov.io/gh/carpentries/pegboard/branch/main/graph/badge.svg
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/pegboard)](https://CRAN.R-project.org/package=pegboard)
+[![Conda
+Version](https://img.shields.io/conda/vn/conda-forge/r-pegboard.svg)](https://anaconda.org/conda-forge/r-pegboard)
 <!-- badges: end -->
 
 > \[pegboard\] is tempered hardboard which is pre-drilled with evenly
@@ -150,11 +152,24 @@ str(div, max.level = 1)
 
 ``` r
 options(repos = c(
-  carpentries = "https://carpentries.r-universe.dev/", 
+  carpentries = "https://carpentries.r-universe.dev/",
   CRAN = "https://cran.rstudio.com/"
 ))
 install.packages("pegboard")
 ```
+
+Tagged releases can be installed from
+[conda-forge](https://github.com/conda-forge/r-pegboard-feedstock). To
+install with [Pixi](https://pixi.sh/), from your Pixi project directory
+run
+
+    pixi add r-pegboard
+
+and to install into a particular conda environment with
+[`conda`](https://docs.conda.io/projects/conda/), in the activated
+environment run
+
+    conda install --channel conda-forge r-pegboard
 
 ## Example
 
